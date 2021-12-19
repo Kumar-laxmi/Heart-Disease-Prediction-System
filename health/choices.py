@@ -1,0 +1,1 @@
+DOCTOR_STATUS = ((1, 'Authorize'), (2, 'UnAuthorize'))
