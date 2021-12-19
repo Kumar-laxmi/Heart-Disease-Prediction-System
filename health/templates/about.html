@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+
+<section class="about py-5">
+	<div class="container py-xl-5 py-lg-3">
+		<div class="title-section mb-md-5 mb-4">
+			<center>
+			<h3 class="w3ls-title text-uppercase text-bl font-weight-bold" style="margin-bottom: -20px; margin-top: 20px;">About Us</h3>
+			</center>
+		</div>
+		<hr />
+
+		<div>
+			<center>
+			<img src="{% static 'images/Picture1.png' %}" alt="" class="img-fluid" width="350px" />
+			</center>
+			<br><br>
+		</div>
+		<div>
+			<center>
+			<h6 class="subheading-w3ls text-uppercase text-bl mb-4">Heart Disease Prediction - A <span style="color: #61bebc;">BinaryCoders</span> Product</h6>
+			</center>
+			<p>Machine Learning is used across many spheres around the world. The healthcare industry is no exception.
+				Machine Learning can play an essential role in predicting presence/absence of Locomotor disorders, Heart
+				diseases and more. Such information, if predicted well in advance, can provide important insights to
+				doctors who can then adapt their diagnosis and treatment per patient basis.</p>
+		</div>
+
+
+	</div>
+	</div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+
+<div class="container-fluid" style="width:90%;margin-top:8%">
+                    <div class="container-fluid">
+                        <h1 align="center"class="w3ls-title text-uppercase text-dark font-weight-bold">Doctor Records</h1><br>
+                         </div><hr>
+                                <table id="example" class="display" style="width:100%">
+                                  <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Full Name</th>
+                                      <th>Image</th>
+                                      <th>Email</th>
+                                      <th>Contact</th>
+                                      <th>Address</th>
+                                      <th>Category</th>
+                                      <th>Status</th>
+                                      <th>Assign</th>
+                                      <th>Action</th>
+
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              {% for i in doc %}
+                                <tr>
+                                  <td>{{forloop.counter}}</td>
+                                  <td>{{i.user.first_name}} {{i.user.last_name}}</td>
+                                  <td><img src="{{i.image.url}}" style="width:80px;height:80px"></td>
+                                  <td>{{i.user.email}}</td>
+                                  <td>{{i.contact}}</td>
+                                  <td>{{i.address}}</td>
+                                  <td>{{i.category}}</td>
+                                  <td>
+                                      {% if i.status == 1 %}
+                                      <b>Authorized</b>
+                                  {% else %}
+                                      <b>Unauthorized</b>
+                                      {% endif %}
+                                  </td>
+                                    <td>{% if i.status == 1 %}
+                                        <a href="{% url 'assign_status' i.id %}" onclick="return confirm('Do you want to withdraw approval to doctor : {{i.user.first_name}}?')"><button class="btn btn-danger">Cancel</button></a>
+                                        {% else %}
+                                        <a href="{% url 'assign_status' i.id %}" onclick="return confirm('Do you want to give approve to doctor : {{i.user.first_name}}?')"><button class="btn btn-success">Assign</button></a>
+                                        {% endif %}
+                                    </td>
+
+                                    <td style="width:150px">
+
+                                      <a href="{% url 'change_doctor' i.id %}" ><button class="btn btn-primary"><i class="fa fa-edit"></i></button></a>
+                                      <a href="{% url 'delete_doctor' i.id %}" ><button class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o"></i></button></a></td>
+                              </tr>
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+{% for i in messages %}
+<script>
+alert('hii');
+    alert({{i}});
+</script>
+{% endfor %}
+{% endblock %}

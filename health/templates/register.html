@@ -1,0 +1,86 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+	<!-- register -->
+{% ifequal error "create" %}
+<script>
+    alert('Registration Successfull');
+    window.location="{% url 'login' %}";
+</script>
+{% endifequal %}
+
+
+	<section class="logins py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-section mb-md-5 mb-4">
+				<h6 class="w3ls-title-sub"></h6>
+				<h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Register Now</h3>
+			</div><hr/>
+			<div class="login px-sm-12" style="width:100%">
+				<form action="" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label>First Name</label>
+						<input type="text" class="form-control" name="fname" placeholder="First Name" required="">
+						</div>
+						<div class="col-md-6">
+						<label>Last Name</label>
+						<input type="text" class="form-control" name="lname" placeholder="Last Name" required="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label>Username</label>
+						<input type="text" class="form-control" name="uname" placeholder="Username" required="">
+						</div>
+						<div class="col-md-6">
+						<label>Password</label>
+						<input type="password" class="form-control" name="pwd" placeholder="Password" required="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label>Email</label>
+						<input type="email" class="form-control" name="email" placeholder="Enter Email" required="">
+						</div>
+						<div class="col-md-6">
+						<label>Contact</label>
+						<input type="text" class="form-control" name="contact" placeholder="Enter Contact" required="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label>Date Of Birth</label>
+						<input type="date" class="form-control" name="dob" placeholder="" required="">
+						</div>
+						<div class="col-md-6">
+						<label>Image</label>
+						<input type="file" class="form-control" name="image" required="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label class="mb-2">City</label>
+						<input type="text" class="form-control" name="add" id="password1" placeholder="Enter Address" required="">
+						</div>
+						<div class="col-md-6">
+						<label>User Type</label>
+						<div class="form-control">
+						Patient <input type="radio" placeholder="Patient" name="type" style="margin-right:4%" required="" value="Patient">
+						Doctor <input type="radio" placeholder="Patient" name="type" required="" value="Doctor">
+						</div>
+						</div>
+
+					</div>
+					<button type="submit" class="btn submit mt-4">Register</button>
+					<p class="text-center mt-5">
+						<a href="#">By clicking Register, I agree to your terms</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- //register -->
+
+{% endblock %}

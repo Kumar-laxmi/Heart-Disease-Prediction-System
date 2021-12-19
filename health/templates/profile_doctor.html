@@ -1,0 +1,88 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+<style>
+    .div1{
+    color:green;
+    }
+    .div2{
+    color:red;
+    }
+</style>
+<div class="container" style="width:60%;margin-top:8%;margin-bottom:5%;background:white;border-radius:2%;border:1px solid grey">
+    <br>
+    <h2 class="w3ls-title text-uppercase text-dark font-weight-bold" align="center">My Detail</h2>
+
+<div align="left" class="container-fluid" style="width:100%;margin-bottom:5%">
+    <hr><div class="row" >
+        <div class="col-md-6 div2" style="color: #414141; font-weight: 900;">
+            <strong>Full Name:</strong>
+        </div>
+        <div class="col-md-6 div1">
+            {{pro.user.first_name}} {{pro.user.last_name}}
+        </div>
+    </div><hr>
+
+
+    <div class="row">
+        <div class="col-md-6 div2" style="color: #414141; font-weight: 900;">
+            <strong>Image:</strong>
+        </div>
+        <div class="col-md-6">
+            <img src="{{pro.image.url}}" style="width:100px;height:130px"></img>
+        </div></div><hr>
+
+    <div class="row">
+        <div class="col-md-6 div2" style="color: #414141; font-weight: 900;">
+            <strong>Email Id :</strong>
+        </div>
+        <div class="col-md-6 div1">
+            {{pro.user.email}}
+        </div>
+    </div><hr>
+
+     <div class="row">
+        <div class="col-md-6 div2" style="color: #414141; font-weight: 900;">
+            <strong>Date of Birth :</strong>
+        </div>
+        <div class="col-md-6 div1">
+            {{pro.dob}}
+        </div>
+    </div><hr>
+
+
+     <div class="row">
+        <div class="col-md-6 div2" style="color: #414141; font-weight: 900;">
+            <strong>Contact :</strong>
+        </div>
+        <div class="col-md-6 div1">
+            {{pro.contact}}
+        </div>
+     </div><hr>
+
+    <div class="row">
+        <div class="col-md-6 div2" style="color: #414141; font-weight: 900;">
+            <strong>City :</strong>
+        </div>
+        <div class="col-md-6 div1">
+            {{pro.address}}
+        </div>
+    </div><hr>
+    {% ifnotequal error "pat" %}
+    <div class="row">
+        <div class="col-md-6 div2" style="color: #414141; font-weight: 900;">
+            <strong>Specialist :</strong>
+        </div>
+        <div class="col-md-6 div1">
+            {{pro.category}}
+        </div>
+    </div><hr>
+    {% endifnotequal %}
+    <div class="login px-sm-12" style="width:100%">
+    <a href="{% url 'edit_profile' %}">
+        <button class="btn submit mt-4 " style="width:100%; background-color: #726f6e;">Update Detail</button>
+    </a>
+    </div>
+</div>
+</div>
+{% endblock %}

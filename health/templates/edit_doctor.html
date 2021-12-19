@@ -1,0 +1,80 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+	<!-- register -->
+{% ifequal error "create" %}
+<script>
+    alert('Doctor Updated Successfully');
+    window.location="{% url 'view_doctor' %}";
+</script>
+{% endifequal %}
+
+
+	<section class="logins py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-section mb-md-5 mb-4">
+				<h6 class="w3ls-title-sub"></h6>
+				<h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Update Doctor</h3>
+			</div><hr/>
+			<div class="login px-sm-12" style="width:100%">
+				<form action="" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label>First Name</label>
+						<input type="text" class="form-control" value="{{doc.user.first_name}}" name="fname" placeholder="First Name" required="">
+						</div>
+						<div class="col-md-6">
+						<label>Last Name</label>
+						<input type="text" class="form-control" value="{{doc.user.last_name}}" name="lname" placeholder="Last Name" required="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label>Email</label>
+						<input type="email" class="form-control" value="{{doc.user.email}}" name="email" placeholder="Enter Email" required="">
+						</div>
+						<div class="col-md-6">
+						<label>Contact</label>
+						<input type="text" class="form-control" name="contact" value="{{doc.contact}}" placeholder="Enter Contact" required="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label>Select Type of category[Current Category : "{{doc.category}}"]</label>
+							<select class="form-control" name="type">
+								{% for i in type %}
+								{% ifequal i.name doc.category %}
+								<option value="{{i.name}}" selected>{{i.name}}</option>
+								{% else %}
+								<option value="{{i.name}}">{{i.name}}</option>
+								{% endifequal %}
+								{% endfor %}
+							</select>
+						</div>
+						<div class="col-md-6">
+						<label>Contact</label>
+						<input type="text" class="form-control" name="contact" value="{{doc.contact}}" placeholder="Enter Contact" required="">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-6">
+						<label class="mb-2">City</label>
+						<input type="text" class="form-control" value="{{doc.address}}" name="add" id="password1" placeholder="Enter Address" required="">
+						</div>
+						<div class="col-md-4">
+						<label>Image</label>
+						<input type="file" class="form-control" name="image">
+						</div>
+                        <div class="col-md-2">
+						<img src="{{doc.image.url}}" style="width:70%;height:200px">
+						</div>
+					</div>
+					<button type="submit" class="btn submit mt-4">Update Doctor</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- //register -->
+
+{% endblock %}

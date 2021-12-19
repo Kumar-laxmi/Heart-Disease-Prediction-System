@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+
+<div class="container-fluid" style="width:90%;margin-top:8%">
+                    <div class="container-fluid">
+                        <h1 align="center" style="font-weight:bold;font-family : 'Monotype Corsiva' ; color : #E6120E ;margin-top:4%">New Search</h1>
+                         </div><hr>
+                                <table id="example" class="display" style="width:100%">
+                                  <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Patient Name</th>
+                                      <th>Doctor Name</th>
+                                      <th>Symptom</th>
+                                      <th>Disease</th>
+                                      <th>Type</th>
+                                      <th>Date</th>
+                                      <th>Action</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              {% for i in dis %}
+                                <tr>
+                                  <td>{{forloop.counter}}</td>
+                                  <td>{{i.user.user.first_name}} {{i.user.user.last_name}}</td>
+                                  <td>{{i.doctor.user.first_name}} {{i.doctor.user.last_name}}</td>
+                                  <td>{{i.symptom}}</td>
+                                  <td>{{i.disease}}</td>
+                                  <td>{{i.type.name}}</td>
+                                  <td>{{i.date1}}</td>
+                                  <td style="width:150px">
+                                      <a href="{% url 'delete_notification' i.id %}" ><button class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o"></i></button></a></td>
+                              </tr>
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+{% endblock %}

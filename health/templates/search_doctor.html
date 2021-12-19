@@ -1,0 +1,128 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+<div class="container" style="margin-top:8%">
+				<h6 class="w3ls-title-sub"></h6>
+				<h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Search Doctor</h3>
+			<hr/>
+			<div class="login px-sm-12" style="width:100%">
+				<form action="" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="form-group row">
+						<div class="col-md-12">
+						<label>Select By</label>
+						<select class="form-control" name="type" style="border:1px solid lightgray" required="">
+                        <option value="Name">Name</option>
+                        <option value="Type">Type</option>
+                        <option value="Address">Address</option>
+                        </select>
+						</div>
+					</div>
+                    <div class="form-group row">
+						<div class="col-md-12">
+						<label>Write Text</label>
+						<input type="text" class="form-control" name="tex" placeholder="Enter Contact" required="">
+						</div>
+					</div>
+					<button type="submit" class="btn submit mt-4">Search</button>
+				</form>
+			</div>
+			</div>
+	{% ifequal t "Name" %}
+				<div class="container-fluid" style="width:90%;margin-top:0%">
+                    <div class="container-fluid">
+                        <h1 align="center" style="font-weight:bold;font-family : 'Monotype Corsiva' ; color : #E6120E ;margin-top:4%">View Doctor Detail</h1>
+                         </div><hr>
+                                <table id="example" class="display" style="width:100%">
+                                  <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Full Name</th>
+                                      <th>Email</th>
+                                      <th>Contact</th>
+                                      <th>Address</th>
+                                      <th>Category</th>
+									</tr>
+                              </thead>
+                              <tbody>
+                              {% for i in doc %}
+							  {% if i.user.id in li %}
+                                <tr>
+                                  <td>{{forloop.counter}}</td>
+                                  <td>{{i.user.first_name}} {{i.user.last_name}}</td>
+                                  <td>{{i.user.email}}</td>
+                                  <td>{{i.contact}}</td>
+                                  <td>{{i.address}}</td>
+                                  <td>{{i.category}}</td>
+								</tr>
+							  {% endif %}
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+	{% else %}
+	{% ifequal t "Type" %}
+			<div class="container-fluid" style="width:90%;margin-top:%">
+                    <div class="container-fluid">
+                        <h1 align="center" style="font-weight:bold;font-family : 'Monotype Corsiva' ; color : #E6120E ;margin-top:4%">View Doctor Detail</h1>
+                         </div><hr>
+                                <table id="example" class="display" style="width:100%">
+                                  <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Full Name</th>
+                                      <th>Email</th>
+                                      <th>Contact</th>
+                                      <th>Address</th>
+                                      <th>Category</th>
+									</tr>
+                              </thead>
+                              <tbody>
+                              {% for i in doc %}
+                                <tr>
+                                  <td>{{forloop.counter}}</td>
+                                  <td>{{i.user.first_name}} {{i.user.last_name}}</td>
+                                  <td>{{i.user.email}}</td>
+                                  <td>{{i.contact}}</td>
+                                  <td>{{i.address}}</td>
+                                  <td>{{i.category}}</td>
+								</tr>
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div></div>
+	{% else %}
+	{% ifequal t "Address" %}
+			<div class="container-fluid" style="width:90%;margin-top:%">
+                    <div class="container-fluid">
+                        <h1 align="center" style="font-weight:bold;font-family : 'Monotype Corsiva' ; color : #E6120E ;margin-top:4%">View Doctor Detail</h1>
+                         </div><hr>
+                                <table id="example" class="display" style="width:100%">
+                                  <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Full Name</th>
+                                      <th>Email</th>
+                                      <th>Contact</th>
+                                      <th>Address</th>
+                                      <th>Category</th>
+									</tr>
+                              </thead>
+                              <tbody>
+                              {% for i in doc %}
+                                <tr>
+                                  <td>{{forloop.counter}}</td>
+                                  <td>{{i.user.first_name}} {{i.user.last_name}}</td>
+                                  <td>{{i.user.email}}</td>
+                                  <td>{{i.contact}}</td>
+                                  <td>{{i.address}}</td>
+                                  <td>{{i.category}}</td>
+								</tr>
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+	{% endifequal %}
+	{% endifequal %}
+	{% endifequal %}
+{% endblock %}

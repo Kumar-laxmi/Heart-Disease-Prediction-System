@@ -1,0 +1,51 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+<style>
+    fieldset{
+    color:black;
+    }
+</style>
+<div class="container" style="margin-top:5%;margin-bottom:5%">
+    <div class="row">
+        <div  class="col-md-12">
+                <h2 style="margin-top:5%;background:#262626;padding:19px;color:white">ASSIGN STATUS
+                </h2>
+<form id="loginForm" action="#" method="post" style="width:100%" enctype="multipart/form-data">
+    {% csrf_token %}
+    <fieldset id="body">
+        <div class="row">
+          <div class="col-md-12">
+                <fieldset>
+                    <label for="email" style="color:black;">Username</label><br>
+                    <input style="height:33px;width:100%" type="text" name="uname" id="email" value="{{prod.user.username}}" style="height:33px;" readonly>
+                </fieldset>
+          </div>
+          <div class="col-md-12">
+                <fieldset>
+                    <label for="email" style="color:black;">Status</label>
+                    <select name="stat" class="form-group" style="height:33px;width:100%">
+                        <option>----Select Status----</option>
+                        <option value="Accept">Accept</option>
+                        <option value="Reject">Reject</option>
+                    </select>
+                </fieldset>
+          </div>
+        </div>
+    <button class="btn btn-danger" type="submit">Assign Status</button>
+    </fieldset>
+    </form>
+    </div>
+
+</div>
+
+</div>
+
+{% if terror %}
+<script>
+    alert('Assigned Status successfully');
+    window.location = "{% url 'view_doctor' %}";
+</script>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+
+<style>
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid lightblue;
+  border-radius: 5px;
+}
+
+.prjdiv:hover{
+transform:translateY(-10px)
+}
+div .container1{
+
+width:100%;
+background-color:white;
+border-radius:8px;
+}
+h2, h4{
+ padding:10Px;
+}
+
+</style>
+
+
+<div class="container-fluid" style="margin-top:8%;width:100%">
+    <div class="container-fluid">
+        <h1 align="center" style="font-weight:bold;font-family:roman">ADMIN DASHBOARD</h1><hr/><br>
+    </div>
+             <div class="row">
+
+			        <div class="col-md-6" ><a href="{% url 'view_doctor' %}">
+						<div style="margin:1%;padding:10px;background:#47769c;color:white;">
+						<h3 style="font-weight:bold;font-size:35px">{{doc}}</h3>
+						        <h4 style="font-weight:bold;">Total Doctors</h4>
+						        <p style="color:black">All access are given .</p>
+							</div></a>
+					</div>
+
+
+					<div class="col-md-6" ><a href="{% url 'view_patient' %}">
+						    <div style="padding:10px;margin:1%;background:#61bbb9;color:white;">
+						        <h3 style="font-weight:bold;font-size:35px">{{pat}}</h3>
+						        <h4 style="font-weight:bold;">Total Patients</h4>
+						        <p style="color:black">All access are given .</p>
+							</div></a>
+							</div>
+
+				</div>
+				<div class="row">
+					<div class="col-md-6" >
+						<a href="{% url 'view_feedback' %}">
+					<div style="padding:10px;margin:1%;background:#538482;color:white;">
+								<h3 style="font-weight:bold;font-size:35px">{{feed}}</h3>
+						        <h4 style="font-weight:bold;">Total Feedback</h4>
+						        <p style="color:black">All access are given .</p>
+					</div></a>
+					</div>
+
+						<div class="col-md-6" >
+							<a href="{% url 'view_search_pat' %}">
+								<div style="padding:10px;margin:1%;background:#4b605f;color:white;">
+						        <h3 style="font-weight:bold;font-size:35px">{{dis}}</h3>
+						        <h4 style="font-weight:bold;">Searched Quantity</h4>
+						        <p style="color:black">All access are given .</p>
+</a>
+							</div>
+						</div>
+
+
+             </div>
+		
+
+	<div>
+		<hr>
+		<br>
+		<center>
+     <h1>Welcome Admin</h1>
+	</center>
+	<br><br>
+    </div>
+{% endblock %}

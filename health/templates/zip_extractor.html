@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file"  accept="image/gif, image/jpeg, image/png"  onchange="loadFile(event)" name="image" id="file">
+    <div class="container" id="extract">
+        <img id="output" width="200" />
+    </div>
+</form>
+<button id="form_zip">Final Check</button>
+
+</body>
+
+
+<script>
+
+<script>
+    var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+<!--<script>-->
+
+<!--function zipExtract(){-->
+<!--    var zip_file = document.getElementById('extract_file').value;-->
+<!--&lt;!&ndash;    var JSZip = require('JSZip');&ndash;&gt;-->
+<!--        alert(fs.readFile(zip_file));-->
+<!--&lt;!&ndash;    fs.readFile(zip_file, function(err, data) {&ndash;&gt;-->
+<!--&lt;!&ndash;    if (!err) {&ndash;&gt;-->
+<!--&lt;!&ndash;        var zip = new JSZip();&ndash;&gt;-->
+<!--&lt;!&ndash;        zip.loadAsync(data).then(function(contents) {&ndash;&gt;-->
+<!--&lt;!&ndash;            Object.keys(contents.files).forEach(function(filename) {&ndash;&gt;-->
+<!--&lt;!&ndash;                zip.file(filename).async('nodebuffer').then(function(content) {&ndash;&gt;-->
+<!--&lt;!&ndash;                    var dest = path + filename;&ndash;&gt;-->
+<!--&lt;!&ndash;                    fs.writeFileSync(dest, content);&ndash;&gt;-->
+<!--&lt;!&ndash;                    alert(fs);&ndash;&gt;-->
+<!--&lt;!&ndash;                });&ndash;&gt;-->
+<!--&lt;!&ndash;            });&ndash;&gt;-->
+<!--&lt;!&ndash;        });&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;});&ndash;&gt;-->
+<!--}-->
+
+
+<!--&lt;!&ndash;var JSZip = require('JSZip');&ndash;&gt;-->
+
+<!--&lt;!&ndash;fs.readFile(filePath, function(err, data) {&ndash;&gt;-->
+<!--&lt;!&ndash;    if (!err) {&ndash;&gt;-->
+<!--&lt;!&ndash;        var zip = new JSZip();&ndash;&gt;-->
+<!--&lt;!&ndash;        zip.loadAsync(data).then(function(contents) {&ndash;&gt;-->
+<!--&lt;!&ndash;            Object.keys(contents.files).forEach(function(filename) {&ndash;&gt;-->
+<!--&lt;!&ndash;                zip.file(filename).async('nodebuffer').then(function(content) {&ndash;&gt;-->
+<!--&lt;!&ndash;                    var dest = path + filename;&ndash;&gt;-->
+<!--&lt;!&ndash;                    fs.writeFileSync(dest, content);&ndash;&gt;-->
+<!--&lt;!&ndash;                });&ndash;&gt;-->
+<!--&lt;!&ndash;            });&ndash;&gt;-->
+<!--&lt;!&ndash;        });&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;});&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--</script>-->
+</html>
