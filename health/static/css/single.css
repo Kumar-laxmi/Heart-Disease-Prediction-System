@@ -1,0 +1,258 @@
+/* blog page */
+h6.blog-first {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+h6.blog-first span {
+    color: #d84315;
+}
+
+ul.blog_list li {
+    display: inline-block;
+    color: #777;
+}
+
+h5.card-title a {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+a.blog-grid-title {
+    font-size: 24px;
+    display: inline-block;
+}
+
+a.blog-grid-title:hover {
+    color: #d84315;
+}
+
+a.blog-button {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    padding: 9px 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #d84315;
+    border: 2px solid #d84315;
+    border-radius: 40px;
+}
+
+a.blog-button:hover {
+    background: #2196f3;
+    border-color: #2196f3;
+    color: #fff;
+}
+
+ul.blog_list li a {
+    color: #2196f3;
+}
+
+/* //left side */
+
+/* left side */
+a.single-text {
+    font-size: 24px;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+a.single-text:hover {
+    color: #2196f3;
+}
+
+.media img {
+    border-radius: 50%;
+}
+
+.comment-top h4 {
+    color: #1f1f1f;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+.comment-bottom {
+    background: #f7f7f7;
+    padding: 2em;
+    box-shadow: 7px 7px 10px 0 rgba(56, 56, 56, 0.21);
+}
+
+.agileinfo_mail_grid_right textarea {
+    min-height: 180px;
+    resize: none;
+}
+
+.agileinfo_mail_grid_right button {
+    outline: none;
+    padding: 11px 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #2196f3;
+    border: none;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.agileinfo_mail_grid_right button:hover {
+    letter-spacing:2px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+/* //left side */
+
+/* responsive */
+@media(max-width: 991px) {
+    a.single-text {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 1080px) {
+    a.blog-grid-title {
+        font-size: 22px;
+    }
+
+    .posts-grid-right h4 a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1050px) {
+    a.text-cati-2 {
+        font-size: 14px;
+    }
+
+    a.blog-grid-title {
+        font-size: 21px;
+    }
+}
+
+@media(max-width: 736px) {
+    h6.blog-first {
+        font-size: 19px;
+    }
+
+    ul.blog_list li {
+        font-size: 15px;
+    }
+
+    a.blog-button {
+        font-size: 13px;
+        padding: 9px 20px;
+    }
+
+    .agileinfo_mail_grid_right textarea {
+        min-height: 150px;
+    }
+}
+
+@media(max-width: 667px) {
+
+    .agileinfo_mail_grid_right input[type="text"],
+    .agileinfo_mail_grid_right input[type="email"],
+    .agileinfo_mail_grid_right textarea {
+        font-size: 14px;
+    }
+
+    .comment-top h4 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 480px) {
+    a.blog-grid-title {
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 440px) {
+    h6.blog-first {
+        font-size: 16px;
+    }
+
+    ul.blog_list li {
+        font-size: 14px;
+    }
+
+    a.single-text {
+        font-size: 20px;
+    }
+
+    .agileinfo_mail_grid_right,
+    .comment-bottom {
+        padding: 1.5em;
+    }
+}
+
+@media(max-width: 414px) {
+
+    .perso-wthree,
+    .info-commt {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .info-commt {
+        text-align: center !important;
+        margin-top: 10px;
+    }
+
+    .media {
+        display: inherit;
+        margin: 1.5em 0 !important;
+    }
+
+    .media-body {
+        margin-top: 12px;
+    }
+
+    .agileinfo_mail_grid_right button {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 375px) {
+    a.blog-grid-title {
+        font-size: 18px;
+    }
+
+    a.text-cati {
+        font-size: 14px;
+    }
+
+    .agileinfo_mail_grid_right textarea {
+        min-height: 120px;
+    }
+}
+
+@media(max-width: 320px) {
+
+    .posts-grid-left,
+    .posts-grid-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .posts-grid-right {
+        margin-top: 1em;
+    }
+
+    h3.blog-title {
+        font-size: 21px;
+    }
+}
+
+/* //responsive */
