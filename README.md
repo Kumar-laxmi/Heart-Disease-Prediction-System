@@ -59,7 +59,10 @@ of summary data.
 
 ## System Analysis
 ### Modules:
-- **Patient Login:-** *- Patient Login to the system using his ID and Password.*
+- **Patient Login:-** *Patient Login to the system using his ID and Password.*
+- **Patient Registration:_** *If Patient is a new user he will enter his personal details and he
+will user Id and password through which he can login to the system.*
+- **My Details:-** *Patient can view his personal details.*
 
   
 
