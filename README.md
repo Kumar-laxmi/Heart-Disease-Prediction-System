@@ -41,6 +41,26 @@ can effectively predict the risk level of heart diseases.
 stored in database.
 </p>
 
+### Objective
+<p>
+  The main objective of this project is to develop a heart disease prediction system. The system
+can discover and extract hidden knowledge associated with diseases from a historical heart data
+set Heart disease prediction system aims to exploit data mining techniques on medical data set
+to assist in the prediction of the heart diseases.
+</p>
+
+### Project Scope
+<p>
+  The project has a wide scope, as it is not intended to a particular organization. This project is
+going to develop generic software, which can be applied by any businesses organization.
+Moreover it provides facility to its users. Also the software is going to provide a huge amount
+of summary data.
+</p>
+
+## System Analysis
+### Modules:
+- **Patient Login:-** *- Patient Login to the system using his ID and Password.*
+
   
 
 
