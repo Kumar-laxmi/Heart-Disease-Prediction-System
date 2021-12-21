@@ -35,6 +35,11 @@ training algorithm. The obtained results have illustrated that the designed diag
 can effectively predict the risk level of heart diseases.
 </p>
 
+### Aim
+<p> 
+  To predict heart disease according to input parameter values provided by user and dataset
+stored in database.
+</p>
 
   
 
