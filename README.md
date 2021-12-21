@@ -114,5 +114,7 @@ Install dependencies
 Start the server
 
 ```bash
-  npm run start
+  python manage.py runserver
+```
+  
 ## NOTE: GitHub Pages is not working
