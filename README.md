@@ -111,7 +111,7 @@ Start the server
   python manage.py runserver
 ```
 
-## Usage/Examples
+## Model Training(Machine Learning)
 
 ```javascript
 def prdict_heart_disease(list_data):
