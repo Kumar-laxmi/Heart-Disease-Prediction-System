@@ -90,4 +90,29 @@ the system and what all are the diseases predicted by the system.*
 - LOGISTIC REGRESSION
 - SQLITE3 DATABASE INTERGRITY
 - Dataset:https://drive.google.com/file/d/1TeFzjTW_8H78SHFbWrhbf-AGpdUZKJO3/view?usp=sharing
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
 ## NOTE: GitHub Pages is not working
