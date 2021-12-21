@@ -70,7 +70,7 @@ patient and system will also suggest doctors based on the locality*
 - **Feedback:-** *Patient will give feedback this will be reported to the admin*
 - **Doctor Login:-** *Doctor will access the system using his User ID and Password.*
 - **Patient Details:-** *Doctor can view patient’s personal details.*
-- **Notification:-** *Admin and doctor will get notification how many people had accessed*
+- **Notification:-** *Admin and doctor will get notification how many people had accessed
 the system and what all are the diseases predicted by the system.*
 - **Admin Login:-** *Admin can login to the system using his ID and Password.*
 - **Add Doctor:-** *Admin can add new doctor details into the database.*
@@ -80,6 +80,14 @@ the system and what all are the diseases predicted by the system.*
 - **View Patient:-** *Admin can view various patient details that had accessed the system.*
 - **View Feedback:-** *Admin can view feedback provided by various users.*
   
-
-
+### Technology Used:
+- HTML
+- CSS
+- JAVASCRIPT
+- BOOTSTRAP
+- DJANGO
+- GRADIENT BOOSTING ALGORITHM
+- LOGISTIC REGRESSION
+- SQLITE3 DATABASE INTERGRITY
+- Dataset:https://drive.google.com/file/d/1TeFzjTW_8H78SHFbWrhbf-AGpdUZKJO3/view?usp=sharing
 ## NOTE: GitHub Pages is not working
