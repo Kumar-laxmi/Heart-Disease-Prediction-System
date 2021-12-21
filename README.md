@@ -102,13 +102,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
+  cd Heart-Disease-Prediction-System
 ```
 
 Start the server
