@@ -81,15 +81,19 @@ the system and what all are the diseases predicted by the system.*
 - **View Feedback:-** *Admin can view feedback provided by various users.*
   
 ### Technology Used:
-- HTML
-- CSS
-- JAVASCRIPT
-- BOOTSTRAP
-- DJANGO
+- ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+- ![BOOTSTRAP](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+- ![DJANGO](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
+- ![PYTHON](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)
 - GRADIENT BOOSTING ALGORITHM
 - LOGISTIC REGRESSION
-- SQLITE3 DATABASE INTERGRITY
+- ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 - Dataset:https://drive.google.com/file/d/1TeFzjTW_8H78SHFbWrhbf-AGpdUZKJO3/view?usp=sharing
+- #### IDE:
+  - ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+  - ![pyCharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
 
 ## Run Locally
 
