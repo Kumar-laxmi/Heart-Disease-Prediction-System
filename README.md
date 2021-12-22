@@ -134,4 +134,10 @@ def prdict_heart_disease(list_data):
     return (nn_model.score(X_test, y_test) * 100),(pred)
 ```
 
+## Contributors:
+- Kumar Laxmikant
+- Anushka Nambiar
+- Aditya Bansal
+- Aniket Gupta
+
 ## NOTE: GitHub Pages is not working
