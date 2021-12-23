@@ -139,9 +139,6 @@ def prdict_heart_disease(list_data):
     return (nn_model.score(X_test, y_test) * 100),(pred)
 ```
 
-## Statistics:
-![Statistics](https://starchart.cc/Kumar-laxmi/Heart-Disease-Prediction-System.svg)
-
 ## Contributors:
 - Kumar Laxmikant (myself)
 - Anushka Nambiar
