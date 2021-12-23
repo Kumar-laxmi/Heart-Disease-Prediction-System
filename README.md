@@ -95,7 +95,7 @@ the system and what all are the diseases predicted by the system.*
 - Database:
   - ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 - ##### Data-Set for training:
-  - Dataset:https://drive.google.com/file/d/1TeFzjTW_8H78SHFbWrhbf-AGpdUZKJO3/view?usp=sharing
+  - <a href="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/Machine_Learning/heart.csv">Click here for DATA-SET</a>
 - #### IDE:
   - ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
   - ![pyCharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
