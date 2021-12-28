@@ -151,4 +151,8 @@ def prdict_heart_disease(list_data):
 - Aditya Bansal
 - Aniket Gupta
 
+## Output Screen-shots
+When the application is runned then, a Welcome Page pops-up
+<img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/WelcomePage.png" />
+
 ## NOTE: GitHub Pages is not working
