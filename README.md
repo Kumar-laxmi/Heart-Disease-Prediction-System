@@ -1,5 +1,4 @@
-# Heart-Disease-Prediction-System
-Heart Disease Prediction System using Machine Learning
+<img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/Heart-Disease-Prediction-System-banner.png" />
 
 ## Abstract 
 <p> 
