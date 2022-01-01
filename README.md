@@ -157,4 +157,7 @@ When the application is runned then, a Welcome Page pops-up
 Admin Dash-board:
 <img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/AdminDashboard.png" />
 
+Entering Heart Details to check our Health:
+<img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/AddHeartDetail.png" />
+
 ## NOTE: GitHub Pages is not working
