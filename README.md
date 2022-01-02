@@ -163,4 +163,7 @@ Entering Heart Details to check our Health:
 Since these details are stored in the Data-base, so we can also retrieve past results:
 <img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/SearchLogs1.png" />
 
+To view our own details:
+<img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/ViewMyDetaile.png" />
+
 ## NOTE: GitHub Pages is not working
