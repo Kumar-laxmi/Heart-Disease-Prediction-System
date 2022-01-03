@@ -166,4 +166,7 @@ Since these details are stored in the Data-base, so we can also retrieve past re
 To view our own details:
 <img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/ViewMyDetaile.png" />
 
+If a user doesn't understand how to use the application then he can:
+<img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/IntroductionViewVideo.png" />
+
 ## NOTE: GitHub Pages is not working
