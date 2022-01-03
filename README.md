@@ -150,6 +150,10 @@ def prdict_heart_disease(list_data):
 - Aditya Bansal
 - Aniket Gupta
 
+## Demo Video
+For demo video 
+<a href="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/IntroductionViewVideo.png">Click Here</a>
+
 ## Output Screen-shots
 When the application is runned then, a Welcome Page pops-up
 <img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/WelcomePage.png" />
