@@ -181,4 +181,4 @@ To view registered Doctor information:
 <img src="https://github.com/Kumar-laxmi/Heart-Disease-Prediction-System/blob/main/SCREEN-SHOTS/DoctorRecords.png" />
 
 
-## NOTE: GitHub Pages is not working
+
